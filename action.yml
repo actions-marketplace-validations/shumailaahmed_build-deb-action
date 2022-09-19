@@ -1,4 +1,4 @@
-name: 'build-deb-action'
+name: 'build-debs-dpkg'
 description: 'Build debian package.'
 author: 'jiro4989'
 inputs:
