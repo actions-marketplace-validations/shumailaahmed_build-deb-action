@@ -21,6 +21,8 @@ fi
 
 cp -r /template/DEBIAN "$INPUT_PACKAGE_ROOT/"
 
+ls /template/DEBIAN
+
 # remove prefix 'v'
 FIXED_VERSION="$(echo "$INPUT_VERSION" | sed -E 's/^v//')"
 readonly FIXED_VERSION
