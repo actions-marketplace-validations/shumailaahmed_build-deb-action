@@ -21,8 +21,10 @@ fi
 
 cp -r /template/DEBIAN "$INPUT_PACKAGE_ROOT/"
 
+echo "contents of debian"
 ls /template/DEBIAN
 
+echo "contents of template"
 ls /template/
 
 
