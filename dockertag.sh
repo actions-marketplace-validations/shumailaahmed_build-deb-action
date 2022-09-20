@@ -25,7 +25,7 @@ if [[ ! "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
   exit 1
 fi
 
-readonly IMAGE="jiro4989/build-deb-action:$VERSION"
+readonly IMAGE="shumailaahmed/build-deb-action:$VERSION"
 info "IMAGE = $IMAGE"
 docker build -t "$IMAGE" .
 docker push "$IMAGE"
