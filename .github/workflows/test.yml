@@ -22,7 +22,7 @@ jobs:
           - 'test package'
           - ''
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - run: |
           mkdir -p .debpkg/usr/bin
           mkdir -p .debpkg/usr/lib/testbin
@@ -71,7 +71,7 @@ jobs:
   test-github-ref-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - run: |
           mkdir -p .debpkg/usr/bin
           mkdir -p .debpkg/usr/lib/testbin
@@ -104,7 +104,7 @@ jobs:
   test-nim-package:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - uses: jiro4989/setup-nim-action@v1
       - run: |
           git clone https://github.com/jiro4989/nimjson app
@@ -133,7 +133,7 @@ jobs:
   test-postinst:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - run: |
           mkdir -p .debpkg/usr/bin
           mkdir -p .debpkg/usr/lib/testbin
@@ -172,7 +172,7 @@ jobs:
   test-depends:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - uses: jiro4989/setup-nim-action@v1
       - run: |
           git clone https://github.com/jiro4989/nimjson app
